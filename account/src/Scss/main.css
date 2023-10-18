@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/reset.css/reset.css';
+.header {
+  background-color: rgb(65, 65, 65);
+  width: 1440px;
+  margin: 0 auto;
+  height: 8vh;
+}
+.header .top-bar-container {
+  box-sizing: border-box;
+  width: 1440px;
+  height: 100%;
+  padding: 0px 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .top-bar-container .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .top-bar-container .logo-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.header .top-bar-container .logo-section h2 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.header .top-bar-container .profile-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .top-bar-container .profile-links #img-profile {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.header .top-bar-container .profile-links .panel {
+  display: none;
+}
+.header .top-bar-container .profile-links .panel.active {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: -10px;
+  top: 5.6vh;
+  gap: 60px;
+  background-color: seagreen;
+  padding: 40px 0px 40px 15px;
+}
+.header .top-bar-container .profile-links .panel .panel-links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 200px;
+}
+.header .top-bar-container .profile-links .panel .panel-links a {
+  font-family: "Montserrat";
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.header .top-bar-container .profile-links .panel .panel-links a img {
+  width: 20px;
+  height: 20px;
+}
+.header .top-bar-container .profile-links .panel p {
+  display: flex;
+  gap: 10px;
+  font-family: "Montserrat";
+}
+.header .top-bar-container .profile-links .panel p img {
+  width: 15px;
+  height: 15px;
+}
+.header .top-bar-container .profile-links a {
+  font-family: "Montserrat";
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+.main {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+.main .container-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .aside {
+  background-color: rgb(65, 65, 65);
+}
+.main .aside .aside-container {
+  width: 200px;
+  height: 92vh;
+}
+.main .aside .aside-container .aside-content {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh 20px 5vh 20px;
+}
+.main .aside .aside-container .aside-content .routing {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main .aside .aside-container .aside-content .routing a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.main .aside .aside-container .aside-content .routing a img {
+  width: 20px;
+  height: 20px;
+}
+.main .aside .aside-container .aside-content .routing a.active {
+  color: green;
+}
+.main .aside .aside-container .aside-content .date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.main .aside .aside-container .aside-content .date h3 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.main .aside .aside-container .aside-content .date p {
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+}
+
+.footer-container {
+  background-color: rgb(65, 65, 65);
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-container h5 {
+  font-family: "Montserrat";
+  letter-spacing: 1.1px;
+}
+.footer-container .partners {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container .partners img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=main.css.map */
